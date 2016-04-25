@@ -33,8 +33,8 @@ sudo apt-get install -y cuda
 sudo apt-get clean
 
 # Optionally, download your own cudnn; requires registration.
-if [ -f "cudnn-7.0-linux-x64-v4.0-prod.tgz" ] ; then
-  tar -xvf cudnn-7.0-linux-x64-v4.0-prod.tgz
+if [ -f "cudnn-7.5-linux-x64-v5.0-prod.tgz" ] ; then
+  tar -xvf cudnn-7.5-linux-x64-v5.0-prod.tgz
   sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
   sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 fi
