@@ -66,7 +66,7 @@ fi
 
 # Prepare Makefile.config so that it can build on aws
 cp Makefile.config.example Makefile.config
-if [ -f "../cudnn-7.0-linux-x64-v4.0-prod.tgz" ] ; then
+if [ -f "../cudnn-7.5-linux-x64-v5.0-prod.tgz" ] ; then
   sed -i '/^# USE_CUDNN := 1/s/^# //' Makefile.config
 fi
 sed -i '/^# WITH_PYTHON_LAYER := 1/s/^# //' Makefile.config
